@@ -1,4 +1,14 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  basePath: "/portfolio",
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/portfolio',
+        permanent: true,
+      },
+    ]
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
