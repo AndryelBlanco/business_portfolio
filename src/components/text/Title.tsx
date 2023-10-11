@@ -7,8 +7,15 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
 });
 
-export default function Title({ children }: any) {
+interface TitleProps {
+  children: React.ReactNode;
+  align?: 'left' | 'center' | 'right'; // Defina os valores permitidos para o alinhamento
+}
+
+export default function Title({ children, align = 'left' }: TitleProps) {
+  const alignmentClass = align === 'center' ? 'center' : align === 'right' ? 'right' : 'left';
+  
   return (
-    <h1 className={`title ${spaceGrotesk.className}`}>{children}</h1>
+    <h1 className={`title ${spaceGrotesk.className} ${alignmentClass}`}>{children}</h1>
   );
 }
