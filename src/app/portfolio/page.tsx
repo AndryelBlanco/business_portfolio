@@ -6,6 +6,7 @@ import Main from './main';
 
 //Styles
 import './css/portfolio.scss';
+import About from './about';
 
 
 export default function page() {
@@ -13,7 +14,7 @@ export default function page() {
     <main className='main-page-container'>
       <Head/>
       <Main />
-      {/* <Main /> */}
+      <About />
     </main>
   )
 }

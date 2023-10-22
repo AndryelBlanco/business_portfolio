@@ -38,11 +38,44 @@
     background: url("../../../../public/images/logo/Grid.svg"),
       linear-gradient(109deg, #053e56 0%, #02131b 94.1%);
 
+    background-attachment: fixed;
     width: 100vw;
     height: 100vh;
 
     .main-storm-image {
       animation: bounce infinite;
+    }
+  }
+
+  .about-page{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: #F4F4F4;
+    padding: 0 32px 0 32px;
+
+    .about-page-text{
+      width: 50%;
+    }
+
+    .about-page-illustration{ 
+      width: 35%;
+      max-width: 600px;
+    }
+
+    .about-page-title{
+      font-size: 45px;
+      color: #4A4A4A;
+    }
+
+    .about-page-paragraph{
+      width: 100%;
+      max-width: 700px;
     }
   }
 }

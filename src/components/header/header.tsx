@@ -24,7 +24,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= 100) {
+      if (window.scrollY >= 500) {
         setScrolling(true);
       } else {
         setScrolling(false);
